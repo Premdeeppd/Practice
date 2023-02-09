@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for the table */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    th {
+      background-color: lightgray;
+      text-align: left;
+    }
+
+    /* Style for the list */
+    ul {
+      list-style-type: square;
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+    /* Style for the hyperlink */
+    li::before {
+      content: "➜";
+      position: absolute;
+      left: -20px;
+      top: 2px;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    /* Style for the form */
+    form {
+      width: 60%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+    input[type="text"], input[type="password"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Solar System Information</h1>
+  <table>
+    <tr>
+      <th>Planet</th>
+      <th>Type</th>
+      <th>Moons</th>
+    </tr>
+    <tr>
+      <td>Mercury</td>
+      <td>Terrestrial</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Venus</td>
+      <td>Terrestrial</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Earth</td>
+      <td>Terrestrial</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mars</td>
+      <td>Terrestrial</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Jupiter</td>
+      <td>Gas Giant</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>Saturn</td>
+      <td>Gas Giant</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>Uranus</td>
+      <td>Gas Giant</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Neptune</td>
+      <td>Gas Giant</td>
+      <td>14</td>
+    </tr>
+  </table>
+
+  <h2>Famous Moons</h2>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Luna_(Earth%27s_Moon)">Luna (Earth's Moon)</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Phobos_and_Deimos">Phobos and Deimos (Mars' Moons)</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Europa_(moon)">Europa (Jupiter's Moon)</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Titan_(moon)">Titan (Saturn's Moon)</a></li>
+  </ul>
+  <h2>Submit Your Information</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <label>Email:</label>
+    <input type="text" name="email" required>
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male" required>Male
+    <input type="radio" name="gender" value="female" required>Female
+    <label>Subscribe to Newsletter:</label>
+    <input type="checkbox" name="newsletter">
+    <label>Favourite Moon:</label>
+    <select name="moon">
+      <option value="">Select One</option>
+      <option value="Luna">Luna (Earth's Moon)</option>
+      <option value="Phobos">Phobos (Mars' Moon)</option>
+      <option value="Europa">Europa (Jupiter's Moon)</option>
+      <option value="Titan">Titan (Saturn's Moon)</option>
+    </select>
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
