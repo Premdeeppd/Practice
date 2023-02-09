@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+h3{
+    margin: 0px;
+}
+.aside{
+    width: 25vw;
+    height: auto;
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.header{
+    width: 75vw;
+    background-color: bisque;
+}
+.main{
+    width: 75vw;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.child-div{
+    height: 150px;
+    width: 200px;
+    background-color: brown;
+    flex-direction: column;
+    margin: 15px;
+}
+.aside-div{
+    background-color: bisque;
+    width: 80%;
+    margin: 30px;
+}
