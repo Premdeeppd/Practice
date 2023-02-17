@@ -1,0 +1,19 @@
+div{
+    margin: 200px;
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    /* transform: rotate(120deg); This will basically rotate the element 120 degree in clockwise direction*/ 
+    /* transform: scale(1.5); This will scale the element*/
+    transition: 1s;
+
+}
+div:hover{
+    transform: scale(0.5) rotate(360deg) translateX(20px);
+    border-radius: 50%;
+}
+/* p{
+    position: absolute;
+    top: 50%;
+    transform: rotate(-30deg);
+} */
